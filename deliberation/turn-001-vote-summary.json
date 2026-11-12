@@ -1,0 +1,132 @@
+{
+  "turn": 1,
+  "proposal": "deliberation/turn-001-persona-electoral-administrator.md",
+  "branch": "pods/turn-001",
+  "base": "0c3de44",
+  "proposal_commit": "f3dd172",
+  "changed_lines": {
+    "added": 6,
+    "removed": 3,
+    "total": 9
+  },
+  "minor": true,
+  "quorum": 5,
+  "votes": [
+    {
+      "turn": 1,
+      "persona": "civil-libertarian",
+      "vote": "approve",
+      "confidence": "high",
+      "minor": true,
+      "reason": "The deemed-complete default genuinely protects the speaker: administrative silence now starts the clock and permits publication rather than suppressing it, and the substantive test is untouched. A 24-hour completeness check cannot harm speakers, because the Commission's failure runs in their favour. One residual flaw: s 8.5(3) measures 48 hours from receipt while s 8.5(5) measures from 'a complete application', which on one reading stretches the outer restraint to 72 hours. Curable by condition.",
+      "conditions": [
+        "In s 8.5(5), measure the 48 hours from receipt of the application (not from deemed completion), so the maximum restraint is 48 hours.",
+        "Confine an incomplete determination to the matters listed in s 8.5(2), so repeated 'incomplete' responses cannot extend delay beyond the 5-working-day lead time."
+      ]
+    },
+    {
+      "turn": 1,
+      "persona": "constitutional-lawyer",
+      "vote": "approve",
+      "confidence": "medium",
+      "minor": true,
+      "reason": "The amendment cures a defect: 'complete application' was undefined, leaving the s 8.5(3) clock and s 8.5(5) deemed grant unanchored, so silence could defeat the s 8.12 safeguard. Sub-clause 4's merits power and the s 8.5(6) High Court appeal are untouched: vires and appeal rights intact. But sub 3's '48 hours of receiving it' and sub 5's '48 hours of a complete application' are two clocks 24 hours apart, with no restart on correction. Net gain, curable by construction.",
+      "conditions": [
+        "Harmonise the start point: in s 8.5(3) replace 'within 48 hours of receiving it' with 'within 48 hours of the application being received or deemed complete, whichever is later', so that the duty and the deemed-grant consequence share one clock.",
+        "Provide that a corrected or resubmitted application restarts both the 24-hour and the 48-hour periods from its new receipt.",
+        "State that deemed completeness does not dispense with the s 8.5(2) content requirements and does not limit refusal under s 8.5(4)."
+      ]
+    },
+    {
+      "turn": 1,
+      "persona": "disinformation-researcher",
+      "vote": "reject",
+      "confidence": "medium",
+      "minor": true,
+      "reason": "Deemed-complete is a bad-actor lever. File thin or placeholder content late Friday: silence makes it complete, then deemed granted, so a deepfake carries a lawful code. Platforms get 8.6(2) immunity and 8.8(2) takedown is unavailable because pre-clearance now exists - correction only, while the lie circulates. The deadlock is real, but the clock must run from a curative completeness notice, and a deemed grant must not defeat takedown or confer platform immunity.",
+      "conditions": [
+        "An application notified incomplete within 24 hours must restart the 48-hour decision clock on the cured application; a missed notice should deem the application incomplete and returned, not complete.",
+        "A deemed-granted code must not confer platform immunity under 8.6(2) or bar a takedown order under 8.8(2) where no substantive decision was made.",
+        "Record deemed completeness and deemed grants on the public register under 8.11 and flag them for mandatory post-publication review."
+      ]
+    },
+    {
+      "turn": 1,
+      "persona": "electoral-administrator",
+      "vote": "approve",
+      "confidence": "high",
+      "minor": true,
+      "reason": "The amendment supplies the trigger the clause lacked: a fixed 24-hour gate, a reasons duty, and a default that bites, so the Commission can no longer suspend the 48-hour clock by silence. The merits gate in s 8.5(4) and post-publication remedies are untouched, so deemed completeness does not force approval of deficient content. Workable across print, broadcast and online; numbering stable. Residual gaps are notice mechanics and resubmission timing, addressed in conditions.",
+      "conditions": [
+        "Prescribe electronic notice via the Commission's designated system, deemed given when sent, and define 'receiving an application' as receipt by that system so the clock is objectively ascertainable.",
+        "Expressly permit resubmission after an incompleteness notice, with the five-working-day lead time in s 8.5(1) running from the original application so a compliant promoter is not timed out.",
+        "Record completeness determinations and deemed-completeness events on the public register under s 8.11, and confirm staffing or automated intake for the 24-hour check before commencement."
+      ]
+    },
+    {
+      "turn": 1,
+      "persona": "small-party-organiser",
+      "vote": "approve",
+      "confidence": "high",
+      "minor": true,
+      "reason": "A volunteer with a laptop gains, not loses. Previously silence stalled the clock with no reviewable event; a small party cannot litigate that. Now the Commission must say within 24 hours what is missing, and silence makes the application complete - the default runs in the applicant's favour. No new form, fee, or applicant deadline is imposed; the duty is the Commission's. Lead time and clause numbering are unchanged. Approve.",
+      "conditions": []
+    }
+  ],
+  "tally": {
+    "approve": 4,
+    "reject": 1,
+    "abstain": 0
+  },
+  "outcome": "approved",
+  "dissent": [
+    "disinformation-researcher"
+  ],
+  "advisory_conditions": [
+    {
+      "persona": "civil-libertarian",
+      "condition": "In s 8.5(5), measure the 48 hours from receipt of the application (not from deemed completion), so the maximum restraint is 48 hours."
+    },
+    {
+      "persona": "civil-libertarian",
+      "condition": "Confine an incomplete determination to the matters listed in s 8.5(2), so repeated 'incomplete' responses cannot extend delay beyond the 5-working-day lead time."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "Harmonise the start point: in s 8.5(3) replace 'within 48 hours of receiving it' with 'within 48 hours of the application being received or deemed complete, whichever is later', so that the duty and the deemed-grant consequence share one clock."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "Provide that a corrected or resubmitted application restarts both the 24-hour and the 48-hour periods from its new receipt."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "State that deemed completeness does not dispense with the s 8.5(2) content requirements and does not limit refusal under s 8.5(4)."
+    },
+    {
+      "persona": "disinformation-researcher",
+      "condition": "An application notified incomplete within 24 hours must restart the 48-hour decision clock on the cured application; a missed notice should deem the application incomplete and returned, not complete."
+    },
+    {
+      "persona": "disinformation-researcher",
+      "condition": "A deemed-granted code must not confer platform immunity under 8.6(2) or bar a takedown order under 8.8(2) where no substantive decision was made."
+    },
+    {
+      "persona": "disinformation-researcher",
+      "condition": "Record deemed completeness and deemed grants on the public register under 8.11 and flag them for mandatory post-publication review."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Prescribe electronic notice via the Commission's designated system, deemed given when sent, and define 'receiving an application' as receipt by that system so the clock is objectively ascertainable."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Expressly permit resubmission after an incompleteness notice, with the five-working-day lead time in s 8.5(1) running from the original application so a compliant promoter is not timed out."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Record completeness determinations and deemed-completeness events on the public register under s 8.11, and confirm staffing or automated intake for the 24-hour check before commencement."
+    }
+  ],
+  "decided_at": "2026-11-13T11:42:00+13:00"
+}

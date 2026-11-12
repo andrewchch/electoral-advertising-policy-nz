@@ -1,16 +1,11 @@
 {
   "protocol_version": 1,
-  "status": "voting",
-  "active_persona": "electoral-administrator",
-  "pending_vote": {
-    "turn": 1,
-    "proposal": "deliberation/turn-001-persona-electoral-administrator.md",
-    "branch": "pods/turn-001",
-    "base": "0c3de44"
-  },
+  "status": "approved",
+  "active_persona": "disinformation-researcher",
+  "pending_vote": null,
   "last_merged_turn": 0,
-  "last_turn": 0,
-  "next_turn": 1,
+  "last_turn": 1,
+  "next_turn": 2,
   "turn_ceiling": 10,
   "convergence": {
     "consecutive_unanimous_minor": 0,
@@ -24,6 +19,22 @@
     "constitutional-lawyer",
     "small-party-organiser"
   ],
-  "history": [],
-  "updated_at": "2026-11-13T11:40:00+13:00"
+  "history": [
+    {
+      "turn": 1,
+      "persona": "electoral-administrator",
+      "outcome": "approved",
+      "tally": {
+        "approve": 4,
+        "reject": 1,
+        "abstain": 0
+      },
+      "minor": true,
+      "changed_lines": 9,
+      "proposal_commit": "f3dd172",
+      "vote_summary": "deliberation/turn-001-vote-summary.json",
+      "note": "4-1. Concurrences require the 48-hour clocks in s 8.5(3) and (5) to be harmonised and a resubmission rule; dissent requires a deemed-granted code not to confer s 8.6(2) immunity or bar s 8.8(2) takedown. Carry to a later turn."
+    }
+  ],
+  "updated_at": "2026-11-13T11:43:00+13:00"
 }

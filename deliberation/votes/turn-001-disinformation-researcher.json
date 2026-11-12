@@ -1,0 +1,13 @@
+{
+  "turn": 1,
+  "persona": "disinformation-researcher",
+  "vote": "reject",
+  "confidence": "medium",
+  "minor": true,
+  "reason": "Deemed-complete is a bad-actor lever. File thin or placeholder content late Friday: silence makes it complete, then deemed granted, so a deepfake carries a lawful code. Platforms get 8.6(2) immunity and 8.8(2) takedown is unavailable because pre-clearance now exists - correction only, while the lie circulates. The deadlock is real, but the clock must run from a curative completeness notice, and a deemed grant must not defeat takedown or confer platform immunity.",
+  "conditions": [
+    "An application notified incomplete within 24 hours must restart the 48-hour decision clock on the cured application; a missed notice should deem the application incomplete and returned, not complete.",
+    "A deemed-granted code must not confer platform immunity under 8.6(2) or bar a takedown order under 8.8(2) where no substantive decision was made.",
+    "Record deemed completeness and deemed grants on the public register under 8.11 and flag them for mandatory post-publication review."
+  ]
+}
