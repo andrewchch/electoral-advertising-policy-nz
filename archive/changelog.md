@@ -83,3 +83,16 @@ approved 4-1; see `deliberation/turn-001-vote-summary.json`.
 Follow-up recorded from the concurrences and dissent: harmonise the 48-hour start points
 in s 8.5(3) and (5), provide for resubmission after an incompleteness notice, and ensure a
 deemed-granted code does not confer platform immunity or bar a takedown order.
+
+## v0.10.1 — 13 November 2026 (deliberation turn 3)
+s 8.5: replaced the two 48-hour clocks with one applicable period; added a 24-hour
+correction and resubmission rule that preserves the five-working-day lead time; limited
+the Commission to one incompleteness notice, confined to the s 8.5(2) matters; and added
+s 8.5(7)–(8), requiring a deemed code to be registered, reviewed under s 8.7 within three
+working days, and treated for s 8.8(2) as if it had not been pre-cleared. Proposed by
+`civil-libertarian`, approved 5-0; see `deliberation/turn-003-vote-summary.json`.
+
+Conditions carried for a future turn: a lapse rule where an applicant does not correct
+within 24 hours; an express statement that a deemed code is pre-clearance for s 8.6;
+the continuing application of s 8.6(2) platform immunity to deemed codes; and conforming
+the s 8.12 s 5 analysis.

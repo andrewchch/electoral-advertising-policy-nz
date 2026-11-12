@@ -1,6 +1,6 @@
 # A Fair and Transparent Electoral Information Marketplace
 
-**Version 0.10 — 13 November 2026**
+**Version 0.10.1 — 13 November 2026**
 
 **Purpose:** To strengthen New Zealand's democracy by ensuring that political ideas
 can compete on their merits, that voters have equitable access to verifiable

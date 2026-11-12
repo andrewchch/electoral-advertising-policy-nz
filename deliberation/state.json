@@ -1,9 +1,9 @@
 {
   "protocol_version": 1,
-  "status": "approved",
+  "status": "ready",
   "active_persona": "constitutional-lawyer",
   "pending_vote": null,
-  "last_merged_turn": 1,
+  "last_merged_turn": 3,
   "last_turn": 3,
   "next_turn": 4,
   "turn_ceiling": 10,
