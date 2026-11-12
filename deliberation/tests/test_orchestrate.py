@@ -215,6 +215,12 @@ class OrchestratorTest(unittest.TestCase):
         self.assertEqual(state["status"], "converged")
         self.assertEqual(state["last_merged_turn"], 1)
         self.assertIn("Convergence", state["stopped_reason"])
+        report = self.repo / "deliberation" / "turn-001-final-report.md"
+        self.assertTrue(report.exists())
+        self.assertIn("Deliberation Session 1 — Final Report", report.read_text())
+        self.assertEqual(
+            state.get("final_report"), "deliberation/turn-001-final-report.md"
+        )
 
     def test_new_session_advances_persona_and_turn(self) -> None:
         # One approved turn, then a new session.
@@ -230,6 +236,7 @@ class OrchestratorTest(unittest.TestCase):
         self.assertEqual(state["next_turn"], 2)
         self.assertEqual(state["active_persona"], "disinformation-researcher")
         self.assertEqual(state["last_merged_turn"], 1)
+        self.assertEqual(state["session_start_turn"], 2)
 
     def test_check_reports_consistent_state(self) -> None:
         proc = self._run(

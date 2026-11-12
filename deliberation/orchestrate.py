@@ -252,6 +252,7 @@ def default_state(personas: Sequence[str]) -> Dict[str, Any]:
         "rotation": list(personas),
         "history": [],
         "session": 1,
+        "session_start_turn": 1,
         "session_first_merge_pending": True,
         "updated_at": iso_now(),
     }
@@ -1138,6 +1139,7 @@ Return exactly one line: WROTE {vote_file} <vote>
             self.save_state(state)
             git(self.repo, "add", "--", "deliberation/state.json")
             git(self.repo, "commit", "-m", f"Close turn {turn:03d}")
+        self.maybe_write_final_report()
 
     # -- finish rejected --------------------------------------------------
 
@@ -1207,8 +1209,92 @@ Return exactly one line: WROTE {vote_file} <vote>
             f"Record turn {turn:03d} rejected",
         )
         log(f"[turn {turn}] rejected; archived {self.rejected_branch(turn)}")
+        self.maybe_write_final_report()
 
     # -- state and stopping ----------------------------------------------
+
+    def maybe_write_final_report(self) -> None:
+        state = self.load_state()
+        if state.get("status") not in {"converged", "stopped"}:
+            return
+        rel = f"deliberation/turn-{int(state['last_turn']):03d}-final-report.md"
+        if (self.repo / rel).exists():
+            return
+
+        proposal = (self.repo / "proposal.md").read_text(encoding="utf-8")
+        match = VERSION_RE.search(proposal)
+        version = match.group(1) if match else "unknown"
+        rows = []
+        approved = []
+        rejected = []
+        session_start = int(state.get("session_start_turn", 1))
+        for item in state.get("history", []):
+            if int(item.get("turn", 0)) < session_start:
+                continue
+            tally = item.get("tally", {})
+            rows.append(
+                f"| {item.get('turn')} | {item.get('persona')} | "
+                f"{item.get('outcome')} | {tally.get('approve', 0)}–"
+                f"{tally.get('reject', 0)} | {item.get('changed_lines', 0)} | "
+                f"{item.get('minor')} |"
+            )
+            if item.get("outcome") == "approved":
+                persona = item.get("persona", "")
+                turn_path = self.repo / self.turn_file_rel(
+                    int(item.get("turn", 0)), persona
+                )
+                issue = self.issue_summary(turn_path) if turn_path.exists() else ""
+                approved.append(
+                    f"- Turn {item.get('turn')} ({persona}): {issue}"
+                )
+            elif item.get("outcome") == "rejected":
+                rejected.append(
+                    f"- Turn {item.get('turn')} ({item.get('persona')}): "
+                    f"archived on `{item.get('archived_branch')}`; see "
+                    f"`{item.get('rejection_note')}` on that branch."
+                )
+        lines = [
+            f"# Deliberation Session {state.get('session', 1)} — Final Report",
+            "",
+            f"- **Generated:** {today_nz()}",
+            f"- **Status:** {state['status']}",
+            f"- **Reason:** {state.get('stopped_reason', '')}",
+            f"- **Last merged turn:** {state['last_merged_turn']}",
+            f"- **Proposal version:** {version}",
+            "",
+            "## Turn record",
+            "",
+            "| Turn | Persona | Outcome | Tally | Changed lines | Minor |",
+            "|---|---|---|---|---|---|",
+            *rows,
+            "",
+            "## Approved changes",
+            "",
+            *(approved or ["(none)"]),
+            "",
+            "## Rejected proposals",
+            "",
+            *(rejected or ["(none)"]),
+            "",
+            "## Open items",
+            "",
+            "See `archive/questions.md` and `deliberation/state.json`. This report is "
+            "generated from committed state; the turn files and vote summaries are the "
+            "authoritative record.",
+            "",
+            "## Recent commits",
+            "",
+            "```",
+            git_out(self.repo, "log", "--oneline", "--first-parent", "-12"),
+            "```",
+            "",
+        ]
+        (self.repo / rel).write_text("\n".join(lines), encoding="utf-8")
+        state["final_report"] = rel
+        self.save_state(state)
+        git(self.repo, "add", "--", rel, "deliberation/state.json")
+        git(self.repo, "commit", "-m", f"Write session {state.get('session', 1)} final report")
+        log(f"[session] final report: {rel}")
 
     def next_persona(self, state: Dict[str, Any], current: str) -> str:
         rotation = state.get("rotation") or self.personas
@@ -1426,6 +1512,7 @@ def cmd_new_session(orch: Orchestrator, force: bool) -> int:
         state.get("last_turn", 0), state.get("last_merged_turn", 0)
     )
     state["next_turn"] = max(state.get("next_turn", 1), state["last_turn"] + 1)
+    state["session_start_turn"] = state["next_turn"]
     state["active_persona"] = orch.next_persona(state, last_persona)
     orch.save_state(state)
     git(orch.repo, "add", "--", "deliberation/state.json")
@@ -1472,6 +1559,7 @@ def cmd_run(
                 done += 1
                 continue
             if not force:
+                orch.maybe_write_final_report()
                 log(
                     f"Session is {state['status']}: "
                     f"{state.get('stopped_reason', '')}"

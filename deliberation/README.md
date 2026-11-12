@@ -138,8 +138,8 @@ For turn `N`:
    changelog, record `state.json`, remove the pod and branch.
    **Rejected:** write `deliberation/turn-NNN-rejection.md`, commit, remove the worktree,
    rename the branch to `rejected/turn-NNN`, and record the rejection on `main`.
-8. If the convergence rule or the ceiling is met, set `converged` or `stopped`; otherwise
-   set `ready` for the next turn.
+8. If the convergence rule or the ceiling is met, set `converged` or `stopped` and write
+   `deliberation/turn-NNN-final-report.md`; otherwise set `ready` for the next turn.
 
 The stopping rule is in `state.json`: two consecutive unanimous minor approvals, or the
 turn ceiling (10).
@@ -157,7 +157,7 @@ The orchestrator is designed to be resumed with `run`:
 | `voting` | Reuses existing valid votes, then tallies |
 | `approved` | Merges if needed, records, removes the pod |
 | `rejected` | Writes the rejection record if needed, archives |
-| `converged` / `stopped` | Refuses unless `--force` or `new-session` |
+| `converged` / `stopped` | Writes the final report if missing, then refuses unless `--force` or `new-session` |
 
 If an agent fails, the pod is left in place and the error names it. Inspect it, then either
 fix the files and run `run` again, or remove it manually:
@@ -181,8 +181,8 @@ model calls.
 python3 -m unittest discover -s deliberation/tests -v
 ```
 
-Covered: approved merge, rejected archive, convergence stop, new session, parallel votes,
-automatic version bump, dry-run safety, and state consistency.
+Covered: approved merge, rejected archive, convergence stop, final report, new session,
+parallel votes, automatic version bump, dry-run safety, and state consistency.
 
 ---
 

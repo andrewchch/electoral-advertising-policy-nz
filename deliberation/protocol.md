@@ -266,6 +266,9 @@ changes the division of labour to make the loop crash-safe:
   a boolean `minor`, and a list of `conditions`.
 - `new-session` clears convergence and continues turn numbering; it does not delete turn
   files or reset `last_turn`.
+- On stopping, the runner writes `deliberation/turn-NNN-final-report.md` automatically. The
+  report is generated from committed state; the turn files and vote summaries remain the
+  authoritative record.
 
 The agent command is configurable (`--agent-cmd`) and receives the prompt through
 `DELIBERATE_PROMPT_FILE`, so prompts are not re-parsed by the shell. The default is
