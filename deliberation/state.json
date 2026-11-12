@@ -1,6 +1,6 @@
 {
   "protocol_version": 1,
-  "status": "proposing",
+  "status": "voting",
   "active_persona": "civil-libertarian",
   "pending_vote": {
     "turn": 3,
@@ -58,5 +58,5 @@
       "note": "Unanimous rejection, including the proposer. Harm accepted; pre-clearance of numerical framing rejected as content adjudication. Preferred alternative: objective basis-disclosure duty enforced by post-publication correction, or a narrow Q5 offence."
     }
   ],
-  "updated_at": "2026-11-13T12:12:00+13:00"
+  "updated_at": "2026-11-13T12:13:00+13:00"
 }
