@@ -30,6 +30,40 @@ python3 deliberation/orchestrate.py run --max-turns 0
 
 ---
 
+## Replaying the experiment from v0.9
+
+The current `main` is v0.10.2 with session 1 history. Two ways to run again:
+
+**Continue on the current proposal.** Use `new-session`, then `run`. This starts at turn 5
+and keeps the v0.10.2 text.
+
+**Replay from the original v0.9 baseline.** Do this in a throwaway clone, because the
+runner always uses `main` as the base branch:
+
+```bash
+REAL=/path/to/electoral-advertising-policy-nz
+git clone "$REAL" /tmp/electoral-replay
+cd /tmp/electoral-replay
+
+# Reset main to the bootstrap commit (v0.9 + deliberation scaffolding).
+git checkout -B main 0c3de44
+
+# Bring in the runner and docs from the current main.
+git checkout origin/main -- deliberation/orchestrate.py deliberation/README.md deliberation/tests
+git commit -m "Add the runner to the replay baseline"
+
+# --no-taskpods keeps the runner on this clone's reset main; taskpods would
+# fetch origin/main (v0.10.2) instead.
+python3 deliberation/orchestrate.py --no-taskpods check
+python3 deliberation/orchestrate.py --no-taskpods run --max-turns 0 \
+  --agent-cmd 'your-agent-command'
+```
+
+The clone's `main` is the v0.9 baseline, so the first approved turn gets the first
+version bump of the session. The original repo is untouched.
+
+---
+
 ## The agent command
 
 The script runs a shell command inside the pod. The default is:
