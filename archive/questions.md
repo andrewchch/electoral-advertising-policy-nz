@@ -35,7 +35,12 @@ problem); micro-targeting on harvested personal data; dehumanising imagery.
 hard one — adding a numerical-framing technique would capture it, but risks capturing
 ordinary partisan emphasis.
 
-**Status:** open — the central unresolved design question.
+**Status:** answered for this instrument — deliberation turn 2 rejected a fifth
+numerical-framing technique 0–5 (including the proposer). The harm is accepted, but
+pre-clearance would require the Commission to adjudicate contested policy
+characterisations. Preferred alternative: an objective basis-disclosure duty (figures,
+source, base period, inclusions) enforced by post-publication correction. See
+`deliberation/turn-002-rejection.md`; archived on `rejected/turn-002`.
 
 ## 5. Does s 7 have enough teeth?
 s 7 leaves the "9 new taxes" billboard lawful by design. Is that the right line, or should
@@ -43,7 +48,10 @@ there be a narrow offence of knowingly false statements of fact about a rival's 
 platform? Note the existing s 199A Electoral Act offence covers only the final days and
 only deliberate falsehoods.
 
-**Status:** open — linked to Q4.
+**Status:** open — now the more promising route for the "9 new taxes" problem. A narrow
+offence of knowingly false statements of fact about a rival's platform would need a truth
+defence, a materiality requirement, and a realistic appeal route; see the turn 2 rejection
+note.
 
 ## 6. Voucher cost and funding mechanism
 ~$20 × enrolled voters. Confirm the fiscal envelope and the split between redirected
