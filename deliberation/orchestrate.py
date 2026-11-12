@@ -888,8 +888,8 @@ Return exactly one line: WROTE {vote_file} <vote>
             "tally": counts,
             "outcome": "approved" if approved else "rejected",
             "dissent": [v["persona"] for v in votes if v["vote"] == "reject"],
-            "unanimous": len(votes) == len(self.personas)
-            and counts["approve"] == len(votes),
+            "unanimous": len(votes) == self.voters
+            and counts["approve"] == self.voters,
             "advisory_conditions": [
                 {"persona": v["persona"], "condition": c}
                 for v in votes
