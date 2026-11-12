@@ -1,0 +1,12 @@
+{
+  "turn": 1,
+  "persona": "civil-libertarian",
+  "vote": "approve",
+  "confidence": "high",
+  "minor": true,
+  "reason": "The deemed-complete default genuinely protects the speaker: administrative silence now starts the clock and permits publication rather than suppressing it, and the substantive test is untouched. A 24-hour completeness check cannot harm speakers, because the Commission's failure runs in their favour. One residual flaw: s 8.5(3) measures 48 hours from receipt while s 8.5(5) measures from 'a complete application', which on one reading stretches the outer restraint to 72 hours. Curable by condition.",
+  "conditions": [
+    "In s 8.5(5), measure the 48 hours from receipt of the application (not from deemed completion), so the maximum restraint is 48 hours.",
+    "Confine an incomplete determination to the matters listed in s 8.5(2), so repeated 'incomplete' responses cannot extend delay beyond the 5-working-day lead time."
+  ]
+}

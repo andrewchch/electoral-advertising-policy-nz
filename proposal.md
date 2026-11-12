@@ -280,10 +280,13 @@ calculable to impair conscious evaluation of the message.
 1. Application at least 5 working days before intended publication.
 2. Application includes full content, the promoter statement, and a description of the
    technique and its intended effect.
-3. The Commission must decide within 48 hours of a complete application.
+3. The Commission must, within 24 hours of receiving an application, notify the applicant
+   whether it is complete and, if not, what is missing. An application not rejected as
+   incomplete within that period is deemed complete. The Commission must decide a complete
+   application within 48 hours of receiving it.
 4. The Commission may grant, grant with conditions (including modification), or refuse.
-5. If no decision is made within 48 hours, the application is deemed granted and a code
-   issued immediately.
+5. If no decision is made within 48 hours of a complete application, the application is
+   deemed granted and a code issued immediately.
 6. Refusal or conditions may be appealed to the High Court within 24 hours; the Court
    must determine the appeal within 48 hours.
 
