@@ -1,0 +1,12 @@
+{
+  "turn": 3,
+  "persona": "disinformation-researcher",
+  "vote": "approve",
+  "confidence": "medium",
+  "minor": true,
+  "reason": "New s 8.5(8) closes the harm I dissented on: a deemed code no longer bars s 8.8(2) takedown, is registered, and must be reviewed within three working days, so Commission silence cannot confer durable protection on a deepfake. The one-occasion rule and 24-hour correction window create no new escape: the five-working-day lead time survives and silence still runs in the applicant's favour only until review. Residual: s 8.6(2) immunity keys off a 'valid code', so platforms remain shielded for deemed codes. Approve; a one-line deeming closes it.",
+  "conditions": [
+    "In s 8.5(8), add that s 8.6(2) does not apply to advertising published under a deemed code, so platform immunity never attaches without a substantive decision.",
+    "Require the s 8.5(8) review of a deemed code to be completed within three working days without the s 8.7 extension, so a deemed synthetic-media advertisement cannot stay up past the close of polls."
+  ]
+}
