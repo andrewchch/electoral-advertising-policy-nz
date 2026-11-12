@@ -1,7 +1,7 @@
 # Resume Block — paste at the start of a new chat
 
 **Project:** A Fair and Transparent Electoral Information Marketplace (NZ policy proposal)
-**Current version:** 0.9, dated 12 November 2026
+**Current version:** 0.10.2, dated 13 November 2026
 **Files held:** proposal.md · archive/changelog.md · archive/questions.md · archive/resume.md
 
 **Structure (11 clauses):**
@@ -21,14 +21,20 @@ lower spending ceiling, vouchers).
 - No references to earlier drafts inside proposal.md.
 - Keep clause numbering stable; if renumbering, log the mapping in changelog.md.
 
-**Last decision made:** v0.9 consolidation and renumbering; pre-clearance narrowed to
-prescribed techniques only.
+**Last decision made:** deliberation session 1 (turns 1–4) merged and converged at
+v0.10.2. s 8.5 now has one pre-clearance decision period, a 24-hour correction and
+resubmission rule, a single incompleteness notice, and deemed-code register/review/takedown
+safeguards; s 9 names the High Court for disqualification. The proposed fifth technique
+(deceptive numerical framing) was rejected 0–5: Q4 is answered for that instrument, and Q5
+is now the more promising route.
 
 **Next three open questions:**
-1. Donation cap and vouchers — commit to both, or prioritise one?
-2. Should the prescribed techniques list be extended to numerical/visual framing (would
-   capture the "9 new taxes" billboard, but widens s 5 exposure)?
-3. What reach/spend threshold triggers digital pre-clearance?
+1. Q5: is a narrow offence of knowingly false statements of fact about a rival's platform
+   the right route to the "9 new taxes" problem, now that pre-clearance of numerical
+   framing has been rejected?
+2. Q3: what reach/spend threshold triggers paid digital pre-clearance?
+3. Q1/Q2: commit to donation cap and vouchers as a package, and what is the spending
+   ceiling figure?
 
 **Working method:** iterate clause by clause ("rewrite s 8.5"), not document by document.
 
@@ -44,3 +50,8 @@ The repository also holds a persisted multi-agent deliberation loop. On resume:
 `deliberation/protocol.md` is the operating manual; `deliberation/personas.md` defines
 the five voting personas. Every proposal, vote, and state transition is committed, so the
 loop is safe to terminate at any point. Do not re-litigate a decided turn.
+
+**Session 1 status:** converged at turn 4 (ceiling 10). Three approved (turns 1, 3, 4),
+one rejected (turn 2, archived on `rejected/turn-002`). The next persona, if the session is
+resumed, is `small-party-organiser` at turn 5. Full report:
+`deliberation/turn-004-final-report.md`.

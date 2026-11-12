@@ -3,10 +3,11 @@
   "status": "converged",
   "active_persona": "small-party-organiser",
   "pending_vote": null,
-  "last_merged_turn": 3,
+  "last_merged_turn": 4,
   "last_turn": 4,
   "next_turn": 5,
   "turn_ceiling": 10,
+  "stopped_reason": "Convergence: turns 3 and 4 were unanimous minor approvals (2 of 2 required). Hard ceiling 10 not reached.",
   "convergence": {
     "consecutive_unanimous_minor": 2,
     "required": 2,

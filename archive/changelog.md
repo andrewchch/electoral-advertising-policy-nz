@@ -96,3 +96,15 @@ Conditions carried for a future turn: a lapse rule where an applicant does not c
 within 24 hours; an express statement that a deemed code is pre-clearance for s 8.6;
 the continuing application of s 8.6(2) platform immunity to deemed codes; and conforming
 the s 8.12 s 5 analysis.
+
+## v0.10.2 — 13 November 2026 (deliberation turn 4)
+s 9: replaced "an independent court" with "the High Court" for disqualification, aligning
+with ss 7.6 and 8.10. Proposed by `constitutional-lawyer`, approved 5-0; see
+`deliberation/turn-004-vote-summary.json`.
+
+This was the second consecutive unanimous minor approval, so the deliberation session
+converged at turn 4 (ceiling 10). Session report:
+`deliberation/turn-004-final-report.md`. Conditions carried from the vote: reconcile the
+remaining "independent court" phrase in the serious-breach bullet; define the applicant,
+procedure, standard, and appeal route for a disqualification order; and state the
+relationship with the Electoral Act 1993 disqualification provisions.
