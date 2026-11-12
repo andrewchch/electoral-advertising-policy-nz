@@ -1,0 +1,152 @@
+{
+  "turn": 3,
+  "proposal": "deliberation/turn-003-persona-civil-libertarian.md",
+  "branch": "pods/turn-003",
+  "base": "404d08c",
+  "proposal_commit": "68387df",
+  "changed_lines": {
+    "added": 14,
+    "removed": 4,
+    "total": 18
+  },
+  "minor": true,
+  "quorum": 5,
+  "votes": [
+    {
+      "turn": 3,
+      "persona": "civil-libertarian",
+      "vote": "approve",
+      "confidence": "high",
+      "minor": true,
+      "reason": "Section 14 restraint is now bounded and knowable: one clock \u2014 48 hours from receipt, or from the corrected application \u2014 one incompleteness notice only, and a deemed grant that still permits publication, so Commission silence cannot suppress. Sub-clause 8 answers the turn 1 dissent without criminalising the promoter. Two residual risks: an applicant who misses the 24-hour correction window falls outside every clock and loses the deemed grant; and 'as if not pre-cleared' could be misread to expose a deemed code to the s 8.6 offence. Both curable.",
+      "conditions": [
+        "In s 8.5(7), provide that if no corrected application is received within the 24-hour window the original application lapses and may be resubmitted without losing the s 8.5(1) lead time, so a missed correction cannot leave an application outside every clock and outside the deemed grant.",
+        "In s 8.5(8), confine the 'as if it had not been pre-cleared' fiction expressly to s 8.8(2) and state that a deemed code is pre-clearance for s 8.6, so Commission silence cannot found a publishing offence.",
+        "In s 8.5(7), provide that an incompleteness notice may require nothing beyond the s 8.5(2) items and may not require a change to the advertising's message, so the notice cannot become content review."
+      ]
+    },
+    {
+      "turn": 3,
+      "persona": "constitutional-lawyer",
+      "vote": "approve",
+      "confidence": "medium",
+      "minor": true,
+      "reason": "The single-period fix works: (3) and (5) now share one applicable period, and (7) supplies the resubmission rule without renumbering. The one-occasion bar is within Parliament's power and consistent with natural justice: the notice confines the defect, and refusal under (4) remains appealable under (6). The risk is (8). Its fiction is expressly confined to s 8.8(2), but nothing states a deemed code is a 'valid code' for ss 8.4(4) and 8.6(2), and s 8.12's s 5 justification no longer matches a code that can be taken down.",
+      "conditions": [
+        "Deal with non-correction: if the applicant does not correct within the 24 hours allowed by s 8.5(7), the application lapses and the Commission must record the lapse, so that no application is left with no decision period and no deemed-grant trigger.",
+        "Provide expressly that a deemed code is an authorisation code and a 'valid code' for ss 8.4(4) and 8.6(2), and that the s 8.5(8) fiction is confined to s 8.8(2) and does not reach the s 8.6(1) offence.",
+        "State that s 8.5(7) does not limit s 8.5(4), and that a refusal based on a defect not identified in the incompleteness notice must be reasoned and is appealable under s 8.5(6), so the one-occasion bar does not become a refusal without notice.",
+        "In s 8.5(8), require the Commission to commence a review under s 8.7 within 3 working days, so the sub-clause does not impliedly displace the s 8.7 power to extend once by a further 3 working days.",
+        "Amend s 8.12 so the s 5 analysis acknowledges that advertising published under a deemed code remains liable to a takedown order under s 8.8(2)."
+      ]
+    },
+    {
+      "turn": 3,
+      "persona": "disinformation-researcher",
+      "vote": "approve",
+      "confidence": "medium",
+      "minor": true,
+      "reason": "New s 8.5(8) closes the harm I dissented on: a deemed code no longer bars s 8.8(2) takedown, is registered, and must be reviewed within three working days, so Commission silence cannot confer durable protection on a deepfake. The one-occasion rule and 24-hour correction window create no new escape: the five-working-day lead time survives and silence still runs in the applicant's favour only until review. Residual: s 8.6(2) immunity keys off a 'valid code', so platforms remain shielded for deemed codes. Approve; a one-line deeming closes it.",
+      "conditions": [
+        "In s 8.5(8), add that s 8.6(2) does not apply to advertising published under a deemed code, so platform immunity never attaches without a substantive decision.",
+        "Require the s 8.5(8) review of a deemed code to be completed within three working days without the s 8.7 extension, so a deemed synthetic-media advertisement cannot stay up past the close of polls."
+      ]
+    },
+    {
+      "turn": 3,
+      "persona": "electoral-administrator",
+      "vote": "approve",
+      "confidence": "high",
+      "minor": true,
+      "reason": "The rewrite gives one knowable clock: 24 hours to identify every defect against the s 8.5(2) checklist, deemed completeness if missed, one notice only, and a 48-hour decision from corrected receipt. One-occasion rejection converts prior-restraint risk into a merits decision under s 8.5(4), appealable in 24 hours. Deemed codes are registered and reviewed within 3 working days, so s 8.6(2) immunity is preserved yet s 8.8(2) takedown survives, with an audit trail. Residual gaps are receipt and lapse mechanics and register labelling, met by conditions.",
+      "conditions": [
+        "Define receipt and notice: written notice through the Commission's designated electronic system, deemed given when sent, and \"receiving\" as receipt by that system, so the 24-hour gate and the correction clock are objectively ascertainable.",
+        "Provide a closure event: an application not corrected within the 24-hour window lapses and is treated as refused for the purposes of the s 8.5(6) appeal, so no file remains open and undetermined.",
+        "Make the register show status: record whether each code is deemed, log every incompleteness notice and correction, and state that the 3-working-day review runs from issue of the deemed code, so the s 8.8(2) fiction can be applied consistently and audited.",
+        "Confirm intake resourcing before commencement: 24-hour completeness checks including weekends and public holidays, and 3-working-day deemed-code reviews, so deemed grants remain the exception rather than the routine path."
+      ]
+    },
+    {
+      "turn": 3,
+      "persona": "small-party-organiser",
+      "vote": "approve",
+      "confidence": "medium",
+      "minor": true,
+      "reason": "A volunteer gains. One clock replaces two: silence for 24 hours makes the application complete, 48 hours makes it granted, so a slow Commission cannot stall a minor party. The single incompleteness notice, confined to s 8.5(2), ends drip-fed delay, and relation-back preserves the five-working-day lead time a correction would otherwise burn. The 24-hour cure is tight for someone in paid work, and the one-occasion rule shifts residual risk to applicants, but indefinite delay was worse. Takedown exposure attaches only to prescribed techniques, not ordinary self-certified advertising.",
+      "conditions": [
+        "Extend the s 8.5(7) correction window to two working days, or provide that a correction completed before the s 8.5(1) lead time expires keeps the original receipt date, and require the incompleteness notice by email and text to the contact named in the application, so a volunteer in paid work is not timed out."
+      ]
+    }
+  ],
+  "tally": {
+    "approve": 5,
+    "reject": 0,
+    "abstain": 0
+  },
+  "outcome": "approved",
+  "dissent": [],
+  "unanimous": true,
+  "advisory_conditions": [
+    {
+      "persona": "civil-libertarian",
+      "condition": "In s 8.5(7), provide that if no corrected application is received within the 24-hour window the original application lapses and may be resubmitted without losing the s 8.5(1) lead time, so a missed correction cannot leave an application outside every clock and outside the deemed grant."
+    },
+    {
+      "persona": "civil-libertarian",
+      "condition": "In s 8.5(8), confine the 'as if it had not been pre-cleared' fiction expressly to s 8.8(2) and state that a deemed code is pre-clearance for s 8.6, so Commission silence cannot found a publishing offence."
+    },
+    {
+      "persona": "civil-libertarian",
+      "condition": "In s 8.5(7), provide that an incompleteness notice may require nothing beyond the s 8.5(2) items and may not require a change to the advertising's message, so the notice cannot become content review."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "Deal with non-correction: if the applicant does not correct within the 24 hours allowed by s 8.5(7), the application lapses and the Commission must record the lapse, so that no application is left with no decision period and no deemed-grant trigger."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "Provide expressly that a deemed code is an authorisation code and a 'valid code' for ss 8.4(4) and 8.6(2), and that the s 8.5(8) fiction is confined to s 8.8(2) and does not reach the s 8.6(1) offence."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "State that s 8.5(7) does not limit s 8.5(4), and that a refusal based on a defect not identified in the incompleteness notice must be reasoned and is appealable under s 8.5(6), so the one-occasion bar does not become a refusal without notice."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "In s 8.5(8), require the Commission to commence a review under s 8.7 within 3 working days, so the sub-clause does not impliedly displace the s 8.7 power to extend once by a further 3 working days."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "Amend s 8.12 so the s 5 analysis acknowledges that advertising published under a deemed code remains liable to a takedown order under s 8.8(2)."
+    },
+    {
+      "persona": "disinformation-researcher",
+      "condition": "In s 8.5(8), add that s 8.6(2) does not apply to advertising published under a deemed code, so platform immunity never attaches without a substantive decision."
+    },
+    {
+      "persona": "disinformation-researcher",
+      "condition": "Require the s 8.5(8) review of a deemed code to be completed within three working days without the s 8.7 extension, so a deemed synthetic-media advertisement cannot stay up past the close of polls."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Define receipt and notice: written notice through the Commission's designated electronic system, deemed given when sent, and \"receiving\" as receipt by that system, so the 24-hour gate and the correction clock are objectively ascertainable."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Provide a closure event: an application not corrected within the 24-hour window lapses and is treated as refused for the purposes of the s 8.5(6) appeal, so no file remains open and undetermined."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Make the register show status: record whether each code is deemed, log every incompleteness notice and correction, and state that the 3-working-day review runs from issue of the deemed code, so the s 8.8(2) fiction can be applied consistently and audited."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Confirm intake resourcing before commencement: 24-hour completeness checks including weekends and public holidays, and 3-working-day deemed-code reviews, so deemed grants remain the exception rather than the routine path."
+    },
+    {
+      "persona": "small-party-organiser",
+      "condition": "Extend the s 8.5(7) correction window to two working days, or provide that a correction completed before the s 8.5(1) lead time expires keeps the original receipt date, and require the incompleteness notice by email and text to the contact named in the application, so a volunteer in paid work is not timed out."
+    }
+  ],
+  "decided_at": "2026-11-13T12:22:00+13:00"
+}
