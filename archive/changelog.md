@@ -71,3 +71,15 @@ references as follows:
 Also in v0.9: fixed a typographical duplication in the protected period definition;
 removed the pinning of third-party spending caps to a specific election year; removed
 non-New Zealand authority from the explanatory notes.
+
+## v0.10 — 13 November 2026 (deliberation turn 1)
+s 8.5: added a 24-hour duty to notify an applicant whether a pre-clearance application
+is complete, a default that an application not rejected as incomplete in that period is
+deemed complete, and a fixed start point ("of receiving it") for the 48-hour decision
+clock. This closes the gap by which Commission silence could suspend the clock and defeat
+the deemed-approval safeguard. No renumbering. Proposed by `electoral-administrator`,
+approved 4-1; see `deliberation/turn-001-vote-summary.json`.
+
+Follow-up recorded from the concurrences and dissent: harmonise the 48-hour start points
+in s 8.5(3) and (5), provide for resubmission after an incompleteness notice, and ensure a
+deemed-granted code does not confer platform immunity or bar a takedown order.

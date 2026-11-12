@@ -1,9 +1,9 @@
 {
   "protocol_version": 1,
-  "status": "approved",
+  "status": "ready",
   "active_persona": "disinformation-researcher",
   "pending_vote": null,
-  "last_merged_turn": 0,
+  "last_merged_turn": 1,
   "last_turn": 1,
   "next_turn": 2,
   "turn_ceiling": 10,
