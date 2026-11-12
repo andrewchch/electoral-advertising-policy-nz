@@ -82,11 +82,11 @@ conforming carve-out from the s 8.9 "primarily informational" exclusion. It was 
 - it imposes pre-clearance and self-classification risk on the cheapest speech a small
   party has.
 
-The preferred alternative, recorded in `deliberation/turn-002-rejection.md`, is an
-objective basis-disclosure duty (figures, source, base period, inclusions) self-certified
-through the promoter statement and verified by post-publication correction, or a narrow
-Q5 offence of knowingly false statements of fact about a rival's platform. The rejected
-branch is preserved as `rejected/turn-002`.
+The preferred alternative, recorded in `deliberation/turn-002-rejection.md` on the
+rejected branch, is an objective basis-disclosure duty (figures, source, base period,
+inclusions) self-certified through the promoter statement and verified by post-publication
+correction, or a narrow Q5 offence of knowingly false statements of fact about a rival's
+platform. The rejected branch is preserved as `rejected/turn-002`.
 
 ---
 
