@@ -870,7 +870,7 @@ Return exactly one line: WROTE {vote_file} <vote>
         threshold = int(
             self.state["convergence"].get("minor_max_changed_lines", 40)
         )
-        minor = total < threshold and len(clauses) <= 1
+        minor = total < threshold and len(clauses) == 1
         proposal_commit = git_out(
             pod, "log", "--format=%h", "--grep", f"^turn {turn:03d}:", "-1"
         )
@@ -1072,6 +1072,11 @@ Return exactly one line: WROTE {vote_file} <vote>
         else:
             new_version = old_version or "unchanged"
 
+        merge_sha = git_out(self.repo, "rev-parse", "--short", "HEAD")
+        for item in state.get("history", []):
+            if item.get("turn") == turn:
+                item["note"] = "Approved and merged."
+                item["merge_commit"] = merge_sha
         state["last_merged_turn"] = turn
         state["last_turn"] = max(state.get("last_turn", 0), turn)
         state["next_turn"] = max(state.get("next_turn", turn + 1), turn + 1)
