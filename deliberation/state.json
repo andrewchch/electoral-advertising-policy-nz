@@ -1,8 +1,13 @@
 {
   "protocol_version": 1,
-  "status": "ready",
+  "status": "proposing",
   "active_persona": "electoral-administrator",
-  "pending_vote": null,
+  "pending_vote": {
+    "turn": 1,
+    "proposal": "deliberation/turn-001-persona-electoral-administrator.md",
+    "branch": "pods/turn-001",
+    "base": "0c3de44"
+  },
   "last_merged_turn": 0,
   "last_turn": 0,
   "next_turn": 1,
@@ -20,5 +25,5 @@
     "small-party-organiser"
   ],
   "history": [],
-  "updated_at": "2026-11-13T11:36:00+13:00"
+  "updated_at": "2026-11-13T11:40:00+13:00"
 }
