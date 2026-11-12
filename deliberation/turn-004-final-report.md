@@ -143,10 +143,10 @@ remain open.
 **Deviations from the agreed design.**
 
 - The proposer ran as the orchestrator adopting the persona inside the pod, rather than
-  via `taskpods start turn-NNN --agent "dsh ..."`. `dsh headless` exists, but no headless
-  profile was configured for this session. The lifecycle, branch, commit, and persistence
-  requirements were met; the agent-launch mechanism can be swapped in without changing
-  the protocol.
+  via `taskpods start turn-NNN --agent "dsh ..."`. `dsh headless` exists and could launch
+  an agent in the pod, but this session did not configure or use that path. The lifecycle,
+  branch, commit, and persistence requirements were met; the agent-launch mechanism can be
+  swapped in without changing the protocol.
 - Voters were separate DSH subagent instances, each with its own persona prompt and its
   own committed vote file. This is the substance of "separate DSH instances", but it is
   not literally five `dsh` CLI processes.
