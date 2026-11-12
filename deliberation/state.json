@@ -1,0 +1,24 @@
+{
+  "protocol_version": 1,
+  "status": "ready",
+  "active_persona": "electoral-administrator",
+  "pending_vote": null,
+  "last_merged_turn": 0,
+  "last_turn": 0,
+  "next_turn": 1,
+  "turn_ceiling": 10,
+  "convergence": {
+    "consecutive_unanimous_minor": 0,
+    "required": 2,
+    "minor_max_changed_lines": 40
+  },
+  "rotation": [
+    "electoral-administrator",
+    "disinformation-researcher",
+    "civil-libertarian",
+    "constitutional-lawyer",
+    "small-party-organiser"
+  ],
+  "history": [],
+  "updated_at": "2026-11-13T11:36:00+13:00"
+}

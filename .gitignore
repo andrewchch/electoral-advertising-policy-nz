@@ -1,0 +1,10 @@
+# Local tooling and harness state (never part of the public record)
+.venv/
+.dsh/
+.vscode/
+__pycache__/
+*.pyc
+
+# taskpods worktrees and metadata
+.taskpods/
+.taskpod.json
