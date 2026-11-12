@@ -1,8 +1,13 @@
 {
   "protocol_version": 1,
-  "status": "ready",
+  "status": "proposing",
   "active_persona": "civil-libertarian",
-  "pending_vote": null,
+  "pending_vote": {
+    "turn": 3,
+    "proposal": "deliberation/turn-003-persona-civil-libertarian.md",
+    "branch": "pods/turn-003",
+    "base": "404d08c"
+  },
   "last_merged_turn": 1,
   "last_turn": 2,
   "next_turn": 3,
@@ -53,5 +58,5 @@
       "note": "Unanimous rejection, including the proposer. Harm accepted; pre-clearance of numerical framing rejected as content adjudication. Preferred alternative: objective basis-disclosure duty enforced by post-publication correction, or a narrow Q5 offence."
     }
   ],
-  "updated_at": "2026-11-13T12:06:00+13:00"
+  "updated_at": "2026-11-13T12:12:00+13:00"
 }

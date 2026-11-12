@@ -282,13 +282,23 @@ calculable to impair conscious evaluation of the message.
    technique and its intended effect.
 3. The Commission must, within 24 hours of receiving an application, notify the applicant
    whether it is complete and, if not, what is missing. An application not rejected as
-   incomplete within that period is deemed complete. The Commission must decide a complete
-   application within 48 hours of receiving it.
+   incomplete within that period is deemed complete. The Commission must decide an
+   application within 48 hours of receiving it or, where the Commission has notified the
+   applicant that it is incomplete, within 48 hours of receiving the corrected application.
 4. The Commission may grant, grant with conditions (including modification), or refuse.
-5. If no decision is made within 48 hours of a complete application, the application is
-   deemed granted and a code issued immediately.
+5. If no decision is made within the applicable 48-hour period under sub-clause 3, the
+   application is deemed granted and a code issued immediately.
 6. Refusal or conditions may be appealed to the High Court within 24 hours; the Court
    must determine the appeal within 48 hours.
+7. An applicant may correct an application within 24 hours of an incompleteness notice. A
+   corrected application is taken to have been received on the date of the original
+   application for the purposes of sub-clause 1, but the 48-hour period runs from its
+   actual receipt. The Commission may reject an application as incomplete on one occasion
+   only, and the notice must be confined to the matters in sub-clause 2.
+8. A code issued under sub-clause 5 is a deemed code. The Commission must record it on the
+   public register and review the advertising under s 8.7 within 3 working days. Section
+   8.8(2) applies to advertising published under a deemed code as if it had not been
+   pre-cleared.
 
 ### 8.6 Publication of unauthorised material
 
