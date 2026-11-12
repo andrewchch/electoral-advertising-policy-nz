@@ -388,7 +388,7 @@ calculated to bypass that capacity attack the integrity of the electoral process
 - **Serious breaches:** higher fines, public disclosure, or referral to an independent
   court.
 - **Disqualification:** reserved only for serious, deliberate, and sustained violations,
-  and only after a full hearing by an independent court, not by an administrative body.
+  and only after a full hearing by the High Court, not by an administrative body.
 
 ---
 

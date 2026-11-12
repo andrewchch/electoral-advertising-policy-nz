@@ -1,0 +1,110 @@
+{
+  "turn": 4,
+  "proposal": "deliberation/turn-004-persona-constitutional-lawyer.md",
+  "branch": "pods/turn-004",
+  "base": "0aaedf9",
+  "proposal_commit": "550ebff",
+  "changed_lines": {
+    "added": 1,
+    "removed": 1,
+    "total": 2
+  },
+  "minor": true,
+  "quorum": 5,
+  "votes": [
+    {
+      "turn": 4,
+      "persona": "civil-libertarian",
+      "vote": "approve",
+      "confidence": "high",
+      "minor": true,
+      "reason": "This is a narrowing amendment. Disqualification engages s 12 NZBORA and is the heaviest sanction; leaving the forum as 'an independent court' permits a lower court or tribunal, and forum-shopping, to remove a candidate. Naming the High Court confines the power to the senior trial court with a full hearing, reasons, and appeal, while the serious, deliberate, sustained threshold and full-hearing guarantee are unchanged. It makes disqualification harder, not easier, to impose. No new power; no renumbering.",
+      "conditions": []
+    },
+    {
+      "turn": 4,
+      "persona": "constitutional-lawyer",
+      "vote": "approve",
+      "confidence": "medium",
+      "minor": true,
+      "reason": "Right call. Sections 7.6 and 8.10 already commit disqualification to the High Court; s 9 now names the same forum, confining the s 12 consequence to a superior court with a full hearing and strengthening the s 5 justification without widening the power. Residuals are curable: the serious-breach bullet still says 'an independent court', so s 9 carries two forum formulations; and the order's procedure, term, and appeal route remain unstated.",
+      "conditions": [
+        "In s 9's serious-breach bullet, replace 'referral to an independent court' with 'referral to the High Court' (or say 'a court of competent jurisdiction'), so that s 9 uses one forum formulation and the specificity now in the disqualification bullet is not contradicted a line above.",
+        "Clarify in ss 7.6 and 8.10 whether disqualification is a civil order on application or a penalty on conviction; if the former, specify the applicant, the standard of proof, the maximum term, and the appeal route, so that s 9's 'full hearing by the High Court' describes a defined procedure.",
+        "State that the disqualification order operates alongside the disqualification provisions of the Electoral Act 1993 and neither duplicates nor displaces them, consistent with the read-together rule in s 7.7."
+      ]
+    },
+    {
+      "turn": 4,
+      "persona": "disinformation-researcher",
+      "vote": "approve",
+      "confidence": "medium",
+      "minor": true,
+      "reason": "One line, one clause, and it strengthens certainty: s 9 now matches ss 7.6 and 8.10, so disqualification has one forum and no one can argue a lower court or tribunal may impose it after a thinner hearing. No exclusion widens, no coverage narrows, and the serious/deliberate/sustained threshold survives. Residual gap is procedural, not created here: s 9 still names no applicant and its second bullet retains 'an independent court'.",
+      "conditions": [
+        "State in s 9 who may apply for a disqualification order and on what material, so the most serious sanction is not left without a procedural route.",
+        "Confirm that the retained 'referral to an independent court' in s 9's second bullet does not imply a non-High-Court route to disqualification."
+      ]
+    },
+    {
+      "turn": 4,
+      "persona": "electoral-administrator",
+      "vote": "approve",
+      "confidence": "high",
+      "minor": true,
+      "reason": "Naming one forum fixes where a disqualification application goes, matching ss 7.6 and 8.10, so the Commission is not left litigating forum on judicial review. Disqualification already lay with the High Court under both penalty clauses, so the change adds no incremental workload; the serious, deliberate and sustained threshold keeps volume low, and Solicitor-General leave controls initiation. No deadline, notice, register or enforcement step changes, so no operational gap.",
+      "conditions": [
+        "Tidy the residual in s 9: serious breaches still refer to \"an independent court\"; state whether that means a prosecution court such as the District Court, or align it with the High Court, so each consequence names one forum and the Commission knows where to file.",
+        "Confirm before commencement that disqualification applications can use the High Court's urgency arrangements, so a s 7.6 or s 8.10 order is obtainable before polling day where the conduct is established."
+      ]
+    },
+    {
+      "turn": 4,
+      "persona": "small-party-organiser",
+      "vote": "approve",
+      "confidence": "high",
+      "minor": true,
+      "reason": "Nothing new to comply with: no form, fee or deadline, and the serious, deliberate and sustained threshold is untouched. For a minor party the graver risk is disqualification by an administrative body or an uncertain lower forum; naming the High Court, as ss 7.6 and 8.10 already do, closes that door and gives the s 12 NZBORA right to stand a full-hearing forum. Defence costs are real but disqualification is rare and consequential; one named forum avoids satellite disputes.",
+      "conditions": []
+    }
+  ],
+  "tally": {
+    "approve": 5,
+    "reject": 0,
+    "abstain": 0
+  },
+  "outcome": "approved",
+  "dissent": [],
+  "unanimous": true,
+  "advisory_conditions": [
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "In s 9's serious-breach bullet, replace 'referral to an independent court' with 'referral to the High Court' (or say 'a court of competent jurisdiction'), so that s 9 uses one forum formulation and the specificity now in the disqualification bullet is not contradicted a line above."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "Clarify in ss 7.6 and 8.10 whether disqualification is a civil order on application or a penalty on conviction; if the former, specify the applicant, the standard of proof, the maximum term, and the appeal route, so that s 9's 'full hearing by the High Court' describes a defined procedure."
+    },
+    {
+      "persona": "constitutional-lawyer",
+      "condition": "State that the disqualification order operates alongside the disqualification provisions of the Electoral Act 1993 and neither duplicates nor displaces them, consistent with the read-together rule in s 7.7."
+    },
+    {
+      "persona": "disinformation-researcher",
+      "condition": "State in s 9 who may apply for a disqualification order and on what material, so the most serious sanction is not left without a procedural route."
+    },
+    {
+      "persona": "disinformation-researcher",
+      "condition": "Confirm that the retained 'referral to an independent court' in s 9's second bullet does not imply a non-High-Court route to disqualification."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Tidy the residual in s 9: serious breaches still refer to \"an independent court\"; state whether that means a prosecution court such as the District Court, or align it with the High Court, so each consequence names one forum and the Commission knows where to file."
+    },
+    {
+      "persona": "electoral-administrator",
+      "condition": "Confirm before commencement that disqualification applications can use the High Court's urgency arrangements, so a s 7.6 or s 8.10 order is obtainable before polling day where the conduct is established."
+    }
+  ],
+  "decided_at": "2026-11-13T12:40:00+13:00"
+}

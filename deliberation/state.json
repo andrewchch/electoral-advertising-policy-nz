@@ -1,14 +1,14 @@
 {
   "protocol_version": 1,
-  "status": "ready",
-  "active_persona": "constitutional-lawyer",
+  "status": "converged",
+  "active_persona": "small-party-organiser",
   "pending_vote": null,
   "last_merged_turn": 3,
-  "last_turn": 3,
-  "next_turn": 4,
+  "last_turn": 4,
+  "next_turn": 5,
   "turn_ceiling": 10,
   "convergence": {
-    "consecutive_unanimous_minor": 1,
+    "consecutive_unanimous_minor": 2,
     "required": 2,
     "minor_max_changed_lines": 40
   },
@@ -66,7 +66,22 @@
       "proposal_commit": "68387df",
       "vote_summary": "deliberation/turn-003-vote-summary.json",
       "note": "5-0 unanimous minor approval. Implements the turn 1 conditions: one applicable 48-hour period, a 24-hour correction/resubmission rule, a single incompleteness notice confined to s 8.5(2), and a deemed-code register/review/takedown safeguard. Conditions carried: lapse rule for non-correction; clarify deemed code is pre-clearance for s 8.6; s 8.6(2) platform immunity still applies; update s 8.12."
+    },
+    {
+      "turn": 4,
+      "persona": "constitutional-lawyer",
+      "outcome": "approved",
+      "tally": {
+        "approve": 5,
+        "reject": 0,
+        "abstain": 0
+      },
+      "minor": true,
+      "changed_lines": 2,
+      "proposal_commit": "550ebff",
+      "vote_summary": "deliberation/turn-004-vote-summary.json",
+      "note": "5-0 unanimous minor approval. s 9 now names the High Court, matching ss 7.6 and 8.10. Convergence threshold reached (2 consecutive unanimous minor approvals). Conditions: reconcile the remaining 'independent court' phrase in the serious-breach bullet; define the applicant/procedure for a disqualification order; clarify the relationship with Electoral Act 1993 disqualification."
     }
   ],
-  "updated_at": "2026-11-13T12:24:00+13:00"
+  "updated_at": "2026-11-13T12:42:00+13:00"
 }
