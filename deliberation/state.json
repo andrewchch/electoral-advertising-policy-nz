@@ -1,6 +1,6 @@
 {
   "protocol_version": 1,
-  "status": "proposing",
+  "status": "voting",
   "active_persona": "constitutional-lawyer",
   "pending_vote": {
     "turn": 4,
@@ -73,5 +73,5 @@
       "note": "5-0 unanimous minor approval. Implements the turn 1 conditions: one applicable 48-hour period, a 24-hour correction/resubmission rule, a single incompleteness notice confined to s 8.5(2), and a deemed-code register/review/takedown safeguard. Conditions carried: lapse rule for non-correction; clarify deemed code is pre-clearance for s 8.6; s 8.6(2) platform immunity still applies; update s 8.12."
     }
   ],
-  "updated_at": "2026-11-13T12:32:00+13:00"
+  "updated_at": "2026-11-13T12:33:00+13:00"
 }
