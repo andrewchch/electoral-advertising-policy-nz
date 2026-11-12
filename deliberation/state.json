@@ -1,6 +1,6 @@
 {
   "protocol_version": 1,
-  "status": "proposing",
+  "status": "voting",
   "active_persona": "electoral-administrator",
   "pending_vote": {
     "turn": 1,
