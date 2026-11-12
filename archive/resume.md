@@ -51,6 +51,11 @@ The repository also holds a persisted multi-agent deliberation loop. On resume:
 the five voting personas. Every proposal, vote, and state transition is committed, so the
 loop is safe to terminate at any point. Do not re-litigate a decided turn.
 
+**Automated runner:** `python3 deliberation/orchestrate.py status` and
+`python3 deliberation/orchestrate.py check` work as-is. The current state is `converged`,
+so run `python3 deliberation/orchestrate.py new-session` before `run`. See
+`deliberation/README.md` for the agent command, recovery, and tests.
+
 **Session 1 status:** converged at turn 4 (ceiling 10). Three approved (turns 1, 3, 4),
 one rejected (turn 2, archived on `rejected/turn-002`). The next persona, if the session is
 resumed, is `small-party-organiser` at turn 5. Full report:

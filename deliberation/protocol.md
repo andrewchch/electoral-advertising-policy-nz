@@ -247,3 +247,26 @@ This is not a consensus simulator. A rejection is a successful outcome: it recor
 reasoned boundary and prevents a bad edit from merging. The point of the proof of concept
 is to show that a sequential, branch-based, fully persisted deliberation loop can produce
 reviewable decisions, not that every proposal should pass.
+
+---
+
+## 11. Automated mode
+
+`deliberation/orchestrate.py` implements this protocol end to end. Its operating guide is
+`deliberation/README.md`. The manual procedure above remains valid; the automated mode
+changes the division of labour to make the loop crash-safe:
+
+- The agent writes only `proposal.md` and the turn file (propose phase), or one vote JSON
+  (vote phase). It does not edit `state.json` and does not commit.
+- The orchestrator owns `state.json`, commits, the tally, the merge or archive, the
+  version bump, and the changelog. It records `status: proposing` on `main` before the
+  pod is created, so a crashed turn can be resumed by running `run` again.
+- A missing or invalid vote is retried once. A vote is accepted only if its `turn` and
+  `persona` match, its `vote` and `confidence` are in range, it has a non-empty `reason`,
+  a boolean `minor`, and a list of `conditions`.
+- `new-session` clears convergence and continues turn numbering; it does not delete turn
+  files or reset `last_turn`.
+
+The agent command is configurable (`--agent-cmd`) and receives the prompt through
+`DELIBERATE_PROMPT_FILE`, so prompts are not re-parsed by the shell. The default is
+`dsh headless "$(cat "$DELIBERATE_PROMPT_FILE")"`; a headless DSH profile must exist.
